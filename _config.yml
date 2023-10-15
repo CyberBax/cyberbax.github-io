@@ -16,7 +16,7 @@ timezone: Australia/Perth
 
 title: Cyberbax # the main title
 
-tagline: OSEP / OSCP / VCP / CCNA / Bsc (Hons) / Cyber Security Enthesitis  # it will display as the sub-title
+tagline: OSEP / OSCP / Cyber Security Enthesitis  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
