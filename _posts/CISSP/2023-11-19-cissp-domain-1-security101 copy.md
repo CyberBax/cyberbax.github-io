@@ -1,7 +1,8 @@
 ---
-title: Security 101
+layout: post
+title: CISSP - Security 101
 date: 2023-11-18
-categories: [CISSP, Domain1 Security and Risk Management]
+categories: [CISSP, Domain 1 Security and Risk Management]
 tags: [CISSP, Security Concepts]
 ---
 

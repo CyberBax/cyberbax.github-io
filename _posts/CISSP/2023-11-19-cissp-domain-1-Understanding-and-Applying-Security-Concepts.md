@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "1.2 Understand and Apply Security Concepts"
+title: "CISSP - Understand and Apply Security Concepts"
 date: 2023-11-19
-categories: [CISSP, Domain1 Security and Risk Management]
+categories: [CISSP, Domain 1 Security and Risk Management]
 tags: [CISSP, Security Concepts]
 description: "A comprehensive guide to understanding and applying key security concepts in CISSP, focusing on the CIA Triad: Confidentiality, Integrity, and Availability."
 permalink: /cissp-understanding-security-concepts/
@@ -15,7 +15,7 @@ In the realm of cybersecurity, a grasp of foundational principles is vital for b
 ## The CIA Triad
 Security management concepts and principles are key in policy and solution deployment, focussing on a secure environment. The primary goals of a security infrastructure are centred around the CIA Triad: Confidentiality, Integrity, and Availability.
 
-![CIA Triad](/assets/img/CISSP/CIA.png "The CIA Triad")
+![CIA Triad](/assets/img/CISSP/CIA.png)
 
 Security controls are assessed based on their efficacy in upholding these three core principles. Vulnerabilities and risks are also evaluated in relation to the threat they pose to the CIA Triad.
 
