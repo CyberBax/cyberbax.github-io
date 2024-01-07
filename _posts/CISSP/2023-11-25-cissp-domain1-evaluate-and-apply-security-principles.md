@@ -278,3 +278,4 @@ Understanding various security control frameworks and standards, such as COBIT, 
 
 ### Conclusion
 Understanding the concepts of due diligence and due care is critical for any security professional. These practices are essential for developing robust security strategies and for proving prudence and responsibility in an organization's security efforts.
+
