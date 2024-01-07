@@ -205,7 +205,6 @@ Understanding these organizational roles and responsibilities is key to effectiv
 ### Introduction
 - **Purpose**: To consider the structure of the security solution desired by an organization.
 - **Key Exam Point**: Know the basics of COBIT and its role in organizing complex security solutions.
-- [Rest of the original content]
 - **Variety**: Several frameworks available for different aspects of IT security and governance.
 
 ### COBIT Framework
