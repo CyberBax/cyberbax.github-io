@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CISSP Quick Reference: Key Formulas and Concepts"
+title: "CISSP - Key Formulas and Concepts"
 date: 2024-01-14
 math: true
 categories: [CISSP, Domain 1 Security and Risk Management]
@@ -54,9 +54,9 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 ### Example
 - **Scenario**: 
-  - A server that costs \$10,000 to replace and supports business functions generating \$50,000 in annual revenue.
+  - A server that costs $10,000 to replace and supports business functions generating $50,000 in annual revenue.
 - **Calculation**:
-  - The AV might be the replacement cost of \$10,000 or potentially higher when considering the revenue impact.
+  - The AV might be the replacement cost of $10,000 or potentially higher when considering the revenue impact.
 
 ## Exposure Factor (EF) 
 
@@ -67,6 +67,7 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### How is EF Calculated?
 - **Formula**: 
   - EF is calculated by dividing the potential loss due to a specific threat by the total value of the asset, and then converting that figure into a percentage.
+
     $$
     EF = \left( \frac{\text{Potential Loss from Threat}}{\text{Total Asset Value}} \right) \times 100\%
     $$
@@ -77,13 +78,17 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 - **Calculation**:
   - First, determine the monetary value of the loss. Here, 40% of the customer data's total value is at risk:
+
     $$
     \text{Value at Risk} = 40\% \times \$500,000 = \$200,000
     $$
+
   - Now, apply the EF formula:
+
     $$
     EF = \left( \frac{\$200,000}{\$500,000} \right) \times 100\% = 40\%
     $$
+
   - This calculation means that in the event of this specific threat, the company risks losing 40% of the customer data's total value.
 
 ## Single Loss Expectancy (SLE) 
@@ -96,28 +101,34 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### How is SLE Calculated?
 - **Formula**: 
   - SLE is calculated by multiplying the Asset Value (AV) by the Exposure Factor (EF).
+
     $$
     SLE = AV \times EF
     $$
+
   - **AV (Asset Value)**: The total value of the asset at risk.
   - **EF (Exposure Factor)**: The percentage of the asset value that is likely to be affected by a specific threat.
 
 ### Examples
 - **Example 1**:
-  - **Scenario**: An organization's customer database, valued at \$500,000 (AV), faces a threat of a data breach. The Exposure Factor (EF) for this threat is estimated to be 40%.
+  - **Scenario**: An organization's customer database, valued at $500,000 (AV), faces a threat of a data breach. The Exposure Factor (EF) for this threat is estimated to be 40%.
   - **Calculation**:
+
     $$
     SLE = \$500,000 \times 40\% = \$200,000
     $$
+
   - **Interpretation**: In the event of a data breach, the organization can expect to lose \$200,000.
 
 - **Example 2**:
-  - **Scenario**: A retail company has a warehouse worth \$1,000,000 (AV). There's a risk of flood damage, with an EF estimated at 25%.
+  - **Scenario**: A retail company has a warehouse worth $1,000,000 (AV). There's a risk of flood damage, with an EF estimated at 25%.
   - **Calculation**:
+
     $$
     SLE = \$1,000,000 \times 25\% = \$250,000
     $$
-  - **Interpretation**: If a flood occurs, it could potentially cause \$250,000 worth of damage to the warehouse.
+
+  - **Interpretation**: If a flood occurs, it could potentially cause $250,000 worth of damage to the warehouse.
 
 
 ## Annualized Rate of Occurrence (ARO)
@@ -134,11 +145,14 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### Example
 - **Scenario 1**:
   - If a company has experienced an average of 2 data breaches in the past 10 years, the ARO for data breaches is:
+
     $$
     ARO = \frac{2 \text{ breaches}}{10 \text{ years}} = 0.2 \text{ breaches per year}
     $$
+
 - **Scenario 2**:
   - Consider a natural disaster like a flood, which historically occurs in the company's region once every 25 years. The ARO for flooding is:
+
     $$
     ARO = \frac{1 \text{ flood}}{25 \text{ years}} = 0.04 \text{ floods per year}
     $$
@@ -157,9 +171,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### How is ALE Calculated?
 - **Formula**: 
   - ALE is calculated by multiplying the Single Loss Expectancy (SLE) by the Annualized Rate of Occurrence (ARO).
+
     $$
     ALE = SLE \times ARO
     $$
+
   - **SLE (Single Loss Expectancy)**: Estimated monetary loss from a single occurrence of a threat.
   - **ARO (Annualized Rate of Occurrence)**: Estimated frequency of a threat occurring annually.
 
@@ -167,17 +183,21 @@ In the realm of CISSP and information security, understanding key risk managemen
 - **Example 1**:
   - **Scenario**: With a data breach SLE of \$200,000 and an ARO of 0.2 (expected twice in ten years),
   - **Calculation**:
+
     $$
     ALE = \$200,000 \times 0.2 = \$40,000
     $$
-  - **Interpretation**: An average annual loss of \$40,000 due to data breaches is expected.
+
+  - **Interpretation**: An average annual loss of $40,000 due to data breaches is expected.
 
 - **Example 2**:
-  - **Scenario**: A warehouse at risk of flooding has an SLE of \$250,000, with a flood expected once every 25 years (ARO = 0.04).
+  - **Scenario**: A warehouse at risk of flooding has an SLE of $250,000, with a flood expected once every 25 years (ARO = 0.04).
   - **Calculation**:
+
     $$
     ALE = \$250,000 \times 0.04 = \$10,000
     $$
+
   - **Interpretation**: The expected annual loss due to flooding for the warehouse is \$10,000.
 
 
@@ -190,20 +210,24 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### ROSI Formula
 - **Formula**: 
   - The ROSI is calculated by assessing the reduction in risk costs due to a security measure, minus the cost of implementing the measure, divided by the cost of the measure.
+
     $$
     ROSI = \frac{(ALE_{\text{before}} - ALE_{\text{after}}) - \text{Cost of Control}}{\text{Cost of Control}}
     $$
+
   - **ALE_before**: Expected annual loss from a risk without the security control.
   - **ALE_after**: Expected annual loss from the same risk with the security control in place.
   - **Cost of Control**: The total investment required for implementing the security measure.
 
 ### Example for Clarity
 - **Scenario**:
-  - An organization faces a risk of data breaches, with an expected annual loss (ALE_{\text{before}}) of \$100,000. They are considering a security upgrade that would reduce this risk, bringing the expected annual loss down to \$40,000 (ALE_{\text{after}}). The upgrade costs \$20,000.
+  - An organization faces a risk of data breaches, with an expected annual loss (ALE_before) of $100,000. They are considering a security upgrade that would reduce this risk, bringing the expected annual loss down to $40,000 (ALE_after). The upgrade costs $20,000.
 - **Calculation**:
+
     $$
     ROSI = \frac{(\$100,000 - \$40,000) - \$20,000}{\$20,000} = \frac{\$40,000}{\$20,000} = 2
     $$
+
   - Convert to percentage: ROSI = 2 × 100% = 200%
 - **Interpretation**:
   - A ROSI of 200% indicates that for every dollar spent on the security upgrade, the company effectively saves two dollars in reduced risk.
@@ -213,9 +237,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 #### ROSI Formula Explained
 - **Formula**:
+
   $$
   ROSI = \frac{(ALE_{\text{before}} - ALE_{\text{after}}) - \text{Cost of Control}}{\text{Cost of Control}}
   $$
+
 - Where:
   - **ALE_before**: Annualized Loss Expectancy before the control.
   - **ALE_after**: Annualized Loss Expectancy after implementing the control.
@@ -224,39 +250,51 @@ In the realm of CISSP and information security, understanding key risk managemen
 #### Step-by-Step Calculation
 1. **Calculate the Difference in ALE**:
    - Subtract the ALE after implementing the control from the ALE before the control.
+
      $$
      \text{Difference in ALE} = ALE_{\text{before}} - ALE_{\text{after}}
      $$
+
 2. **Subtract the Cost of Control**:
    - From the difference in ALE, subtract the cost of implementing the control.
+
      $$
      \text{Net Savings} = \text{Difference in ALE} - \text{Cost of Control}
      $$
+
 3. **Divide by the Cost of Control**:
    - Finally, divide the net savings by the cost of control to get ROSI.
+
      $$
      ROSI = \frac{\text{Net Savings}}{\text{Cost of Control}}
      $$
+
    - Convert the result into a percentage by multiplying by 100.
 
 #### Example Calculation
 - **Given**: 
-  - ALE before control (ALE_before) = \$100,000
-  - ALE after control (ALE_after) = \$40,000
-  - Cost of Control = \$20,000
+  - ALE before control (ALE_before) = $100,000
+  - ALE after control (ALE_after) = $40,000
+  - Cost of Control = $20,000
 - **Steps**:
   1. **Difference in ALE**:
+
      $$
      \$100,000 - \$40,000 = \$60,000
      $$
+
   2. **Net Savings**:
+
      $$
      \$60,000 - \$20,000 = \$40,000
      $$
+
   3. **ROSI**:
+
      $$
      ROSI = \frac{\$40,000}{\$20,000} = 2 \text{ or } 200\%
      $$
+
 - **Interpretation**: The security control brings a 200% return on investment, meaning every dollar spent saves two dollars in risk costs.
 
 ## Total Risk 
@@ -267,9 +305,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 ### Total Risk Formula
 - **Formula**:
+
   $$
   Total Risk = Threats \times Vulnerabilities \times Asset Value (AV)
   $$
+
 - Where:
   - **Threats**: Potential harmful events or actions.
   - **Vulnerabilities**: Weaknesses that can be exploited by threats.
@@ -277,14 +317,16 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 ### Example
 - **Scenario**:
-  - A company's server (AV = \$100,000) is vulnerable to a certain type of cyber attack. There is a 0.2 probability of this threat occurring annually.
+  - A company's server (AV = $100,000) is vulnerable to a certain type of cyber attack. There is a 0.2 probability of this threat occurring annually.
 - **Calculation**:
   - Assuming the vulnerability makes the server fully exploitable (Vulnerability factor = 1),
+
     $$
     Total Risk = 0.2 \times 1 \times \$100,000 = \$20,000
     $$
+
 - **Interpretation**:
-  - Before applying any security measures, the company faces a \$20,000 risk due to this specific threat.
+  - Before applying any security measures, the company faces a $20,000 risk due to this specific threat.
 
 
 ## Residual Risk 
@@ -295,9 +337,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 ### Residual Risk Formula
 - **Formula**:
+
   $$
   Residual Risk = Total Risk \times (1 - Control Effectiveness)
   $$
+
 - Where:
   - **Total Risk**: The initial risk level before applying controls.
   - **Control Effectiveness**: The percentage reduction in risk due to the implemented controls.
@@ -307,9 +351,11 @@ In the realm of CISSP and information security, understanding key risk managemen
   - Continuing the previous example, suppose the company implements security controls that reduce the risk of the cyber attack by 60%.
 - **Calculation**:
   - Control Effectiveness = 60% or 0.6,
+
     $$
     Residual Risk = \$20,000 \times (1 - 0.6) = \$20,000 \times 0.4 = \$8,000
     $$
+
 - **Interpretation**:
   - After applying security measures, the residual risk associated with the cyber attack is \$8,000.
 
@@ -322,20 +368,24 @@ In the realm of CISSP and information security, understanding key risk managemen
 
 ### Risk Reduction Formula
 - **Formula**:
+
   $$
   Risk Reduction = \frac{(Total Risk - Residual Risk)}{Total Risk}
   $$
+
 - Where:
   - **Total Risk**: The risk level before applying any controls.
   - **Residual Risk**: The remaining risk after controls are in place.
 
 ### Example
 - **Scenario**:
-  - Using the previous example, where the Total Risk is \$20,000 and the Residual Risk after applying controls is \$8,000.
+  - Using the previous example, where the Total Risk is $20,000 and the Residual Risk after applying controls is \$8,000.
 - **Calculation**:
+
   $$
   Risk Reduction = \frac{(\$20,000 - \$8,000)}{\$20,000} = \frac{\$12,000}{\$20,000} = 0.6 \text{ or } 60\%
   $$
+
 - **Interpretation**:
   - The security controls implemented have reduced the risk by 60%.
 
@@ -371,9 +421,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 - **Approach**: 
   - MTTF is typically calculated based on historical data of similar systems or components. It involves averaging the time intervals between failures over a long period or a large sample size.
   - The formula for MTTF is:
+
     $$
     MTTF = \frac{\text{Total Operating Time}}{\text{Number of Failures}}
     $$
+
   - **Total Operating Time**: The cumulative time that the systems or components were operational.
   - **Number of Failures**: The total number of failures observed during that period.
 
@@ -396,9 +448,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### How is MTBF Calculated?
 - **Formula**: 
   - MTBF is calculated by dividing the total operational time of the system by the number of failures that occurred in that period.
+
     $$
     MTBF = \frac{\text{Total Operational Time}}{\text{Number of Failures}}
     $$
+
   - **Total Operational Time**: The sum of all periods the system was operational.
   - **Number of Failures**: The total count of failures experienced by the system in the same period.
 
@@ -422,9 +476,11 @@ In the realm of CISSP and information security, understanding key risk managemen
 ### How is MTTR Calculated?
 - **Formula**: 
   - MTTR is calculated by dividing the total time spent on repairs by the number of repairs carried out.
+
     $$
     MTTR = \frac{\text{Total Time Spent on Repairs}}{\text{Number of Repairs}}
     $$
+    
   - **Total Time Spent on Repairs**: The cumulative time taken for all repair activities.
   - **Number of Repairs**: The total count of repair instances during the measurement period.
 
