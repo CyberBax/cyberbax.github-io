@@ -30,15 +30,6 @@ In the realm of CISSP and information security, understanding key risk managemen
 | **Mean Time To Failure (MTTF)** | Average time to first failure of a non-repairable system. | `MTTF = Total Operational Time / Number of Failures` |
 | **Mean Time to Repair (MTTR)** | Average time to repair a failed system. | `MTTR = Total Time Spent on Repairs / Number of Repairs` |
 
-
-```mermaid
-graph LR;
-    AV[Asset Value (AV)] --> |AV x EF| SLE[Single Loss Expectancy (SLE)];
-    EF[Exposure Factor (EF)] --> |AV x EF| SLE;
-    SLE --> |SLE x ARO| ALE[Annualized Loss Expectancy (ALE)];
-    ARO[Annualized Rate of Occurrence (ARO)] --> |SLE x ARO| ALE;
-```
-
 ## Asset Value (AV) 
 
 ### What is Asset Value (AV)?
