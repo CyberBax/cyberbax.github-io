@@ -3,6 +3,7 @@ layout: post
 title: "CISSP - Key Formulas and Concepts"
 date: 2024-01-14
 math: true
+mermaid: true
 categories: [CISSP, Domain 1 Security and Risk Management]
 tags: [CISSP, Security Formulas, Risk Assessment]
 description: "A concise guide to essential formulas and concepts in the CISSP curriculum, focusing on risk management and system reliability. Ideal for quick reference and review."
@@ -29,6 +30,14 @@ In the realm of CISSP and information security, understanding key risk managemen
 | **Mean Time To Failure (MTTF)** | Average time to first failure of a non-repairable system. | `MTTF = Total Operational Time / Number of Failures` |
 | **Mean Time to Repair (MTTR)** | Average time to repair a failed system. | `MTTR = Total Time Spent on Repairs / Number of Repairs` |
 
+
+```mermaid
+graph LR;
+    AV[Asset Value (AV)] --> |AV x EF| SLE[Single Loss Expectancy (SLE)];
+    EF[Exposure Factor (EF)] --> |AV x EF| SLE;
+    SLE --> |SLE x ARO| ALE[Annualized Loss Expectancy (ALE)];
+    ARO[Annualized Rate of Occurrence (ARO)] --> |SLE x ARO| ALE;
+```
 
 ## Asset Value (AV) 
 
@@ -360,7 +369,7 @@ In the realm of CISSP and information security, understanding key risk managemen
   - After applying security measures, the residual risk associated with the cyber attack is \$8,000.
 
 
-## Risk Reduction in CISSP: Detailed Explanation
+## Risk Reduction
 
 ### What is Risk Reduction?
 - **Definition**: 
@@ -389,7 +398,7 @@ In the realm of CISSP and information security, understanding key risk managemen
 - **Interpretation**:
   - The security controls implemented have reduced the risk by 60%.
 
-## Risk Mitigation in CISSP: Conceptual Overview
+## Risk Mitigation
 
 ### What is Risk Mitigation?
 - **Definition**: 
@@ -467,7 +476,7 @@ In the realm of CISSP and information security, understanding key risk managemen
   - On average, there's an expected time of 87,600 hours between failures of the server system.
 
 
-## Mean Time to Repair (MTTR) in CISSP: Detailed Explanation
+## Mean Time to Repair (MTTR) 
 
 ### What is Mean Time to Repair (MTTR)?
 - **Definition**: 
@@ -480,7 +489,7 @@ In the realm of CISSP and information security, understanding key risk managemen
     $$
     MTTR = \frac{\text{Total Time Spent on Repairs}}{\text{Number of Repairs}}
     $$
-    
+
   - **Total Time Spent on Repairs**: The cumulative time taken for all repair activities.
   - **Number of Repairs**: The total count of repair instances during the measurement period.
 
@@ -506,6 +515,17 @@ In the realm of CISSP and information security, understanding key risk managemen
 - **Risk Avoidance**: Taking steps to avoid the risk entirely, usually by not engaging in certain activities.
 - **Risk Transference**: Shifting the risk to a third party, such as through insurance or outsourcing.
 - **Risk Deterrence**: Implementing measures to discourage threat actors, like strong security policies and legal actions.
+- **Risk Mitigation**: Implementing controls to reduce the likelihood or impact of a risk. This can involve enhancing security measures, revising policies, or introducing new safeguards.
+
+### Risk Profile
+- **Definition**: A comprehensive assessment of an organization's exposure to various risks, considering the likelihood and impact of different risks.
+- **Components**: 
+  - Risk Appetite: The level of risk an organization is willing to accept.
+  - Risk Tolerance: The degree of variability the organization is willing to withstand.
+  - Risk Capacity: The maximum level of risk the organization can sustain.
+- **Importance**: 
+  - Key to tailoring risk management strategies, prioritizing security measures, and aligning with business objectives.
+
 
 ### Incident Response and Disaster Recovery Planning
 - **Incident Response**:
