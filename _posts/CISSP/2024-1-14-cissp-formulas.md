@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CISSP Quick Reference: Key Formulas and Concepts"
-date: 2024-01-15
+date: 2024-01-14
 math: true
 categories: [CISSP, Domain 1 Security and Risk Management]
 tags: [CISSP, Security Formulas, Risk Assessment]
